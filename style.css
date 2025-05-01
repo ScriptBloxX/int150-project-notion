@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'NotionInter-Medium';
+    src: url('/fonts/NotionInter-Medium.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotionInter-Bold';
+    src: url('/fonts/NotionInter-Bold.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotionInter-SemiBold';
+    src: url('/fonts/NotionInter-SemiBold.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LyonTextRegular';
+    src: url('/fonts/LyonText-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+button{
+    border: 0;
+    background: none;
+}
+
+/* helper class */
+.semi-bold {
+    font-family: 'NotionInter-SemiBold';
+}
+.bold{
+    font-family: 'NotionInter-Bold';
+}
+.t-s{
+    color: #f6f5f4;
+}
+.b-s{
+    background-color: #f6f5f4;
+}
+.main-btn{
+    background-color: #191918;
+    color: #f6f5f4;
+    padding: 4px 11px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* noti */
+.notion-mail {
+    position: relative;
+    background-color: #f6f5f4;
+    padding: 10px 16px;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+.notion-mail button{
+    position: absolute;
+    right: 0;
+    padding: 11px;
+    border: 0;
+    background: none;
+}
+.notion-mail button svg{
+    height: 22px;
+    width: 22px;
+}
+
+/* nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+nav .logo{
+    width: 105px;
+    height: 30px;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-left: 34px;
+}
+nav .menu .left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav .menu .right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
