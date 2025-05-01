@@ -26,9 +26,18 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+html,body{
+    width: 100%;
+}
 button{
     border: 0;
     background: none;
+}
+section{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
 }
 
 /* helper class */
@@ -106,4 +115,54 @@ nav .menu .right{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+/* home */
+section.home .container{
+    display: flex;
+} 
+section.home .container h1{
+    font-size: 76.5px;
+}
+section.home .container p.p22{
+    font-size: 22px;
+}
+section.home .container .left,section.home .container .right{
+    width: 50%;
+    padding: 1rem 7rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+section.home .container .right video{
+    width: 100%;
+}
+section.home .container .sign-up{
+    color: #f6f5f4;
+    background-color: #0083fa;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+section.home .container .req-demo{
+    color: #0083fa;
+    background-color: #ebf5fe;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+section.home .logo-container .logos{
+    display: flex;
+    gap: 1rem;
+}
+section.home .btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+section.home .img-box{
+    padding: 1rem 5rem;
+}
+section.home .img-box img{
+    width: 100%;
+    border-radius: 1rem;
 }
