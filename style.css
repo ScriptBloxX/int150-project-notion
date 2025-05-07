@@ -56,9 +56,9 @@ a{
 .main-btn{
     background-color: #191918;
     color: #f6f5f4;
-    padding: 4px 11px;
+    padding: 8px 14px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 /* noti */
@@ -91,27 +91,46 @@ a{
 nav{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    font-weight: 600;
+    padding: 15px 25px;
+
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 nav .logo{
     width: 105px;
     height: 30px;
 }
-nav .menu{
+nav p{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
-    margin-left: 34px;
+    gap: .5rem;
 }
-nav .menu .left{
+nav p span.dropdown-icon svg{
+    width: 10px;
+    height: 10px;
+}
+nav p span.new{
+    color: #2383e2;
+    background-color: #f0f6fd;
+    font-size: 12px;
+
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+}
+nav .left{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-nav .menu .right{
+nav .right{
     display: flex;
     align-items: center;
     gap: 1rem;
