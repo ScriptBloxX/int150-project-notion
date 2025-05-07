@@ -62,7 +62,7 @@ a{
 }
 
 /* noti */
-.notion-mail {
+/* .notion-mail {
     position: relative;
     background-color: #f6f5f4;
     padding: 10px 16px;
@@ -85,7 +85,7 @@ a{
 .notion-mail button svg{
     height: 22px;
     width: 22px;
-}
+} */
 
 /* nav */
 nav{
