@@ -72,7 +72,7 @@ a{
     font-size: 1rem;
 }
 
-/* noti */
+/* noti comment because notion is update and remove this nav */
 /* .notion-mail {
     position: relative;
     background-color: #f6f5f4;
@@ -372,4 +372,45 @@ section.management .bottom-icons .box{
 section.management .bottom-icons .box img{
     width: 24px;
     height: 24px;
+}
+
+/* ai-promote section */
+section.ai-promote{
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.ai-promote .container{
+    position: relative;
+    background-color: #F6F5F4;
+    padding: 60px;
+    transform: rotate(-3deg);
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+section.ai-promote .container .pin{
+    position: absolute;
+    top: -60px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 68px;
+    height: 99px;
+}
+section.ai-promote .container blockquote{
+    font-size: 42px;
+}
+section.ai-promote .container .forbes{
+    width: 65px;
+    height: 17px;
 }
