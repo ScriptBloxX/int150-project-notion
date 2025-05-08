@@ -99,7 +99,7 @@ nav{
     justify-content: space-between;
     gap: 1rem;
     width: 100%;
-    font-weight: 600;
+    font-weight: 500;
     padding: 15px 25px;
 
     background-color: #fff;
@@ -181,6 +181,7 @@ section.home .container .req-demo{
 section.home .logo-container .logos{
     display: flex;
     gap: 2rem;
+    margin-top: 1rem;
 }
 section.home .logo-container .logos img{
     height: 24px;
@@ -194,6 +195,7 @@ section.home .btn-container{
 section.home .img-box img{
     width: 100%;
     border-radius: 1rem;
+    margin-top: 2.5rem;
 }
 section.home .bottom-btn{
     display: flex;
