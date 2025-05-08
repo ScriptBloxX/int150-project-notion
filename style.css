@@ -376,7 +376,7 @@ section.management .bottom-icons .box img{
 
 /* ai-promote section */
 section.ai-promote{
-    min-height: 80vh;
+    min-height: 70vh;
 
     display: flex;
     justify-content: center;
@@ -413,4 +413,40 @@ section.ai-promote .container blockquote{
 section.ai-promote .container .forbes{
     width: 65px;
     height: 17px;
+}
+
+/* brain-boost section */
+section.brain-boost .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+section.brain-boost .container h1{
+    font-size: 60px;
+}
+section.brain-boost .container .left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+section.brain-boost .container .right{
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+section.brain-boost .container .right .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 270px;
+}
+section.brain-boost .container .right .box video{
+    width: 80px;
+    height: 80px;
+}
+section.brain-boost .video-box video{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
 }
