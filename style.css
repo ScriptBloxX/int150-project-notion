@@ -534,3 +534,46 @@ section.templates .container .right{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
+
+/* everything section */
+section.everything{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.everything h1{
+    font-size: 60px;
+    max-width: 650px;
+}
+section.everything .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    section.everything .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section.everything .container {
+        grid-template-columns: 1fr;
+    }
+}
+section.everything .box{
+    max-width: 283px;
+}
+section.everything .box video,section.everything .box img{
+    width: 80px;
+    height: 80px;
+}
+section.everything .box h3{
+    font-size: 22px;
+}
+section.everything .box p {
+    font-size: 18px;
+}
