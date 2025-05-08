@@ -250,7 +250,7 @@ section.note .container .right .box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 250px;
+    max-width: 270px;
 }
 section.note .container .right .box video{
     width: 80px;
@@ -299,7 +299,7 @@ section.workflow .container .right .box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 250px;
+    max-width: 270px;
 }
 section.workflow .container .right .box video{
     width: 80px;
@@ -321,3 +321,55 @@ section.workflow .bottom-icons .box{
     gap: .5rem;
 }
 
+/* management section */
+section.management{
+    margin-top: 150px;
+}
+section.management .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+section.management .container h1{
+    font-size: 60px;
+}
+section.management .container .left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+section.management .container .right{
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+section.management .container .right .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 270px;
+}
+section.management .container .right .box video{
+    width: 80px;
+    height: 80px;
+}
+section.management .video-box video{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+}
+section.management .bottom-icons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+section.management .bottom-icons .box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+section.management .bottom-icons .box img{
+    width: 24px;
+    height: 24px;
+}
