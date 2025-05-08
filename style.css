@@ -230,6 +230,7 @@ section.note{
 section.note .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 40px;
 }
 section.note .container h1{
@@ -242,25 +243,18 @@ section.note .container .left{
 }
 section.note .container .right{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: .5rem;
 }
 section.note .container .right .box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    max-width: 250px;
 }
-section.note .container .right .box img{
-    width: 70px;
-    height: 70px;
-}
-section.note .container .right .box:nth-child(1) img{
-    height: 60px;
-    width: 70px;
-}
-section.note .container .right .box:nth-child(2) img{
-    height: 40px;
-    width: 40px;
+section.note .container .right .box video{
+    width: 80px;
+    height: 80px;
 }
 section.note .video-box video{
     width: 100%;
@@ -285,6 +279,7 @@ section.workflow{
 section.workflow .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 40px;
 }
 section.workflow .container h1{
@@ -297,26 +292,19 @@ section.workflow .container .left{
 }
 section.workflow .container .right{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: .5rem;
 }
 section.workflow .container .right .box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    max-width: 250px;
 }
 section.workflow .container .right .box video{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
-/* section.workflow .container .right .box:nth-child(1) img{
-    height: 60px;
-    width: 70px;
-}
-section.workflow .container .right .box:nth-child(2) img{
-    height: 40px;
-    width: 40px;
-} */
 section.workflow .video-box video{
     width: 100%;
     border-radius: 1rem;
