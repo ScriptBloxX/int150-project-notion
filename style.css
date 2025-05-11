@@ -1,30 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@font-face {
-    font-family: 'NotionInter-Medium';
-    src: url('/fonts/NotionInter-Medium.woff') format('woff');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotionInter-Bold';
-    src: url('/fonts/NotionInter-Bold.woff') format('woff');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotionInter-SemiBold';
-    src: url('/fonts/NotionInter-SemiBold.woff') format('woff');
-    font-style: normal;
-}
+
 @font-face {
     font-family: 'LyonTextRegular';
-    src: url('/fonts/LyonText-Regular.woff') format('woff');
+    src: url('/assets/fonts/LyonText-Regular-Web.woff2') format('woff2');
     font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NotionInter-Bold';
+    src: url('/assets/fonts/NotionInter-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NotionInter-Medium';
+    src: url('/assets/fonts/NotionInter-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NotionInter-Regular';
+    src: url('/assets/fonts/NotionInter-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NotionInter-SemiBold';
+    src: url('/assets/fonts/NotionInter-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'NotionInter-Regular','Inter', sans-serif;
 }
 html,body{
     width: 100%;
@@ -32,6 +47,9 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+h1{
+    font-family: 'NotionInter-SemiBold';
 }
 button{
     border: 0;
@@ -69,7 +87,9 @@ hr{
     color: #78736f;
 }
 .hl-text{
-    color: #2383e2;   
+    color: #2383e2;
+    font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
 .hl-text-bg{
     background-color: #0083fa;
@@ -106,6 +126,7 @@ nav p{
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-family: 'NotionInter-SemiBold';
 }
 nav p span.dropdown-icon svg{
     width: 10px;
@@ -120,6 +141,8 @@ nav p span.new{
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 1px;
+
+    font-family: 'NotionInter-SemiBold';
 }
 nav .left{
     display: flex;
@@ -130,6 +153,19 @@ nav .right{
     display: flex;
     align-items: center;
     gap: 1rem;
+
+}
+nav .right p:nth-child(1){
+    font-family: 'NotionInter-SemiBold';
+}
+nav .right p{
+    font-family: 'NotionInter-Medium';
+    font-size: 15px;
+}
+nav .right button{
+    font-family: 'NotionInter-Medium';
+    font-weight: 500;
+    font-size: 15px;
 }
 
 /* home section */
@@ -144,6 +180,7 @@ section.home .container h1{
     font-size: 76.5px;
 }
 section.home .container p.p22{
+    font-family: 'NotionInter-Medium';
     font-size: 22px;
 }
 section.home .container .left,section.home .container .right{
@@ -183,6 +220,9 @@ section.home .btn-container{
     flex-wrap: wrap;
     gap: .5rem;
 }
+section.home .btn-container a{
+    font-family: 'NotionInter-SemiBold';
+}
 section.home .img-box img{
     width: 100%;
     border-radius: 1rem;
@@ -220,6 +260,13 @@ section.note .container{
 }
 section.note .container h1{
     font-size: 60px;
+    font-family: 'NotionInter-Bold';
+}
+section.note .container h4{
+    font-family: 'NotionInter-Bold';
+}
+section.note .container p.gray{
+    font-family: 'NotionInter-Medium';
 }
 section.note .container .left{
     display: flex;
@@ -269,6 +316,13 @@ section.workflow .container{
 }
 section.workflow .container h1{
     font-size: 60px;
+    font-family: 'NotionInter-Bold';
+}
+section.workflow .container h4{
+    font-family: 'NotionInter-Bold';
+}
+section.workflow .container p.gray{
+    font-family: 'NotionInter-Medium';
 }
 section.workflow .container .left{
     display: flex;
@@ -316,8 +370,15 @@ section.management .container{
     align-items: flex-end;
     gap: 40px;
 }
-section.management .container h1{
+section.management .container h1 {
     font-size: 60px;
+    font-family: 'NotionInter-Bold';
+}
+section.management .container h4 {
+    font-family: 'NotionInter-Bold';
+}
+section.management .container p.gray {
+    font-family: 'NotionInter-Medium';
 }
 section.management .container .left{
     display: flex;
@@ -407,8 +468,15 @@ section.brain-boost .container{
     align-items: flex-end;
     gap: 40px;
 }
-section.brain-boost .container h1{
+section.brain-boost .container h1 {
     font-size: 60px;
+    font-family: 'NotionInter-Bold';
+}
+section.brain-boost .container h4 {
+    font-family: 'NotionInter-Bold';
+}
+section.brain-boost .container p.gray {
+    font-family: 'NotionInter-Medium';
 }
 section.brain-boost .container .left{
     display: flex;
@@ -442,6 +510,10 @@ section.templates{
 }
 section.templates .header h1{
     font-size: 60px;
+    font-family: 'NotionInter-Bold';
+}
+section.templates h2{
+    font-family: 'NotionInter-Bold';
 }
 section.templates .header .hl-text{
     margin-top: 1rem;
@@ -517,7 +589,7 @@ section.templates .container .left .card .img-box img{
 section.templates .container .right{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 28px;
 }
 
 /* everything section */
@@ -531,6 +603,11 @@ section.everything{
 section.everything h1{
     font-size: 60px;
     max-width: 650px;
+    font-family: 'NotionInter-Bold';
+}
+section.everything p.gray{
+    font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
 section.everything .container{
     display: grid;
@@ -558,9 +635,7 @@ section.everything .box video,section.everything .box img{
 }
 section.everything .box h3{
     font-size: 22px;
-}
-section.everything .box p {
-    font-size: 18px;
+    font-family: 'NotionInter-SemiBold';
 }
 
 /* get-started section */
@@ -571,6 +646,7 @@ section.get-started{
 section.get-started h1{
     font-size: 60px;
     margin-bottom: 50px;
+    font-family: 'NotionInter-Bold';
 }
 section.get-started .container{
     display: flex;
@@ -578,6 +654,7 @@ section.get-started .container{
 }
 section.get-started .container h3{
     font-size: 42px;
+    font-family: 'NotionInter-SemiBold';
 }
 section.get-started .box{
     background-color: #F6F5F4;
@@ -598,6 +675,9 @@ section.get-started .box .btn-container{
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+section.get-started .box .btn-container a{
+    font-family: 'NotionInter-SemiBold';
 }
 section.get-started .box .btn-container a:nth-child(1){
     color: #f6f5f4;
@@ -655,6 +735,9 @@ footer .notion .bottom button{
     padding: 8px;
     width: max-content;
 }
+footer .copyright{
+    font-size: 14px;
+}
 footer .gray{
     font-size: 14px;
 }
@@ -673,9 +756,11 @@ footer .link div{
 }
 footer .link div p{
     font-weight: 600;
+    font-family: 'NotionInter-SemiBold';
 }
 footer .link div a{
     color: #31302e;
+    font-size: 15px;
 }
 footer .link div .explore{
     position: absolute;
