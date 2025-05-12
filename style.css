@@ -61,10 +61,12 @@ button{
     cursor: pointer;
 }
 main{
+    width: 100%;
     max-width: 1440px;
 }
 section{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: max-content;
     padding: 0 8%;
 }
 a{
@@ -209,6 +211,11 @@ nav .right button:hover{
         display: unset;
     }
 }
+@media (max-width: 839px) {
+    nav .right p{
+        display: none;
+    }
+}
 
 /* home section */
 section.home{
@@ -299,180 +306,320 @@ section.home .bottom-btn button:nth-child(1){
     background-color: #e5e5e5;
     border: none;
 }
-
+@media (max-width:960px){
+    section.home .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.home .container .left{
+        width: 100%;
+        text-align: center;
+    }
+    section.home .btn-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section.home .btn-container a{
+        width: max-content;
+    }
+    section.home .logo-container .logos{
+        justify-content: center;
+    }
+}
 /* note section */
 section.note{
     margin-top: 150px;
-}
-section.note .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     gap: 40px;
 }
-section.note .container h1{
+section.note h1{
     font-size: 60px;
     font-family: 'NotionInter-Bold';
     text-wrap: balance;
 }
-section.note .container h4{
+section.note  h4{
     font-family: 'NotionInter-Bold';
 }
-section.note .container p.gray{
+section.note  p.gray{
     font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
-section.note .container .left{
+section.note .left{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-section.note .container .right{
+section.note .right{
+    position: relative;
+}
+section.note .right .box-container{
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 24px;
 }
-section.note .container .right .box{
+section.note  .right p.gray{
+    font-size: 16px;
+}
+section.note .right .box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 270px;
+    max-width: 217px;
 }
-section.note .container .right .box video{
+section.note .right .box video{
     width: 80px;
     height: 80px;
 }
 section.note .video-box video{
     width: 100%;
     border-radius: 1rem;
-    margin-top: 2.5rem;
 }
 section.note .bottom-icons{
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    align-items: center;
 }
 section.note .bottom-icons .box{
     display: flex;
     align-items: center;
     gap: .5rem;
 }
+@media (min-width: 822px) {
+    section.note {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+        grid-template-columns: 1fr 1fr;
+    }
+    section.note .left{
+        grid-area: a;
+    }
+    section.note .right{
+        grid-area: b;
+    }
+    section.note .video-box{
+        grid-area: c;
+    }
+    section.note .bottom-icons{
+        grid-area: d;
+    }
+}
+@media (max-width: 821px) {
+    section.note{
+        gap: 28px;
+    }
+    section.note .right{
+        margin-top: 66px;
+        order: 4;
+    }
+    section.note .right .box-container{
+        position: relative;
+    }
+}
 
 /* workflow section */
-section.workflow{
+section.workflow {
     margin-top: 150px;
-}
-section.workflow .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     gap: 40px;
 }
-section.workflow .container h1{
+section.workflow h1 {
     font-size: 60px;
     font-family: 'NotionInter-Bold';
     text-wrap: balance;
 }
-section.workflow .container h4{
+section.workflow h4 {
     font-family: 'NotionInter-Bold';
 }
-section.workflow .container p.gray{
+section.workflow p.gray {
     font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
-section.workflow .container .left{
+section.workflow .left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-section.workflow .container .right{
+section.workflow .right {
+    position: relative;
+}
+section.workflow .right .box-container {
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: flex-start;
     gap: .5rem;
 }
-section.workflow .container .right .box{
+section.workflow .right p.gray {
+    font-size: 16px;
+}
+section.workflow .right .box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 270px;
+    max-width: 217px;
 }
-section.workflow .container .right .box video{
+section.workflow .right .box video {
     width: 80px;
     height: 80px;
 }
-section.workflow .video-box video{
+section.workflow .video-box video {
     width: 100%;
     border-radius: 1rem;
-    margin-top: 2.5rem;
 }
-section.workflow .bottom-icons{
+section.workflow .bottom-icons {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    align-items: center;
 }
-section.workflow .bottom-icons .box{
+section.workflow .bottom-icons .box {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
+@media (min-width: 822px) {
+    section.workflow {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+        grid-template-columns: 1fr 1fr;
+    }
+    section.workflow .left {
+        grid-area: a;
+    }
+    section.workflow .right {
+        grid-area: b;
+    }
+    section.workflow .video-box {
+        grid-area: c;
+    }
+    section.workflow .bottom-icons {
+        grid-area: d;
+    }
+}
+@media (max-width: 821px) {
+    section.workflow {
+        gap: 28px;
+    }
+    section.workflow .right {
+        margin-top: 66px;
+        order: 4;
+    }
+    section.workflow .right .box-container {
+        position: relative;
+    }
+}
 
 /* management section */
-section.management{
+section.management {
     margin-top: 150px;
-}
-section.management .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     gap: 40px;
 }
-section.management .container h1 {
+section.management h1 {
     font-size: 60px;
     font-family: 'NotionInter-Bold';
     text-wrap: balance;
 }
-section.management .container h4 {
+section.management h4 {
     font-family: 'NotionInter-Bold';
 }
-section.management .container p.gray {
+section.management p.gray {
     font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
-section.management .container .left{
+section.management .left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-section.management .container .right{
+section.management .right {
+    position: relative;
+}
+section.management .right .box-container {
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 24px;
 }
-section.management .container .right .box{
+section.management .right p.gray {
+    font-size: 16px;
+}
+section.management .right .box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 270px;
+    max-width: 217px;
 }
-section.management .container .right .box video{
+section.management .right .box video {
     width: 80px;
     height: 80px;
 }
-section.management .video-box video{
+section.management .video-box video {
     width: 100%;
     border-radius: 1rem;
-    margin-top: 2.5rem;
 }
-section.management .bottom-icons{
+section.management .bottom-icons {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    align-items: center;
 }
-section.management .bottom-icons .box{
+section.management .bottom-icons .box {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 section.management .bottom-icons .box img{
-    width: 24px;
-    height: 24px;
+    height: 25px;
+    width: 25px;
+}
+@media (min-width: 822px) {
+    section.management {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+        grid-template-columns: 1fr 1fr;
+    }
+    section.management .left {
+        grid-area: a;
+    }
+    section.management .right {
+        grid-area: b;
+    }
+    section.management .video-box {
+        grid-area: c;
+    }
+    section.management .bottom-icons {
+        grid-area: d;
+    }
+}
+@media (max-width: 821px) {
+    section.management {
+        gap: 28px;
+    }
+    section.management .right {
+        margin-top: 66px;
+        order: 4;
+    }
+    section.management .right .box-container {
+        position: relative;
+    }
 }
 
 /* ai-promote section */
@@ -524,47 +671,99 @@ section.ai-promote .container .forbes{
 }
 
 /* brain-boost section */
-section.brain-boost .container{
+section.brain-boost {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     gap: 40px;
 }
-section.brain-boost .container h1 {
+section.brain-boost h1 {
     font-size: 60px;
     font-family: 'NotionInter-Bold';
     text-wrap: balance;
 }
-section.brain-boost .container h4 {
+section.brain-boost h4 {
     font-family: 'NotionInter-Bold';
 }
-section.brain-boost .container p.gray {
+section.brain-boost p.gray {
     font-family: 'NotionInter-Medium';
+    font-size: 18px;
 }
-section.brain-boost .container .left{
+section.brain-boost .left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-section.brain-boost .container .right{
+section.brain-boost .right {
+    position: relative;
+}
+section.brain-boost .right .box-container {
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 24px;
 }
-section.brain-boost .container .right .box{
+section.brain-boost .right p.gray {
+    font-size: 16px;
+}
+section.brain-boost .right .box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 270px;
+    max-width: 217px;
 }
-section.brain-boost .container .right .box video{
+section.brain-boost .right .box video {
     width: 80px;
     height: 80px;
 }
-section.brain-boost .video-box video{
+section.brain-boost .video-box video {
     width: 100%;
     border-radius: 1rem;
-    margin-top: 2.5rem;
+}
+section.brain-boost .bottom-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+section.brain-boost .bottom-icons .box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+@media (min-width: 822px) {
+    section.brain-boost {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+        grid-template-columns: 1fr 1fr;
+    }
+    section.brain-boost .left {
+        grid-area: a;
+    }
+    section.brain-boost .right {
+        grid-area: b;
+    }
+    section.brain-boost .video-box {
+        grid-area: c;
+    }
+    section.brain-boost .bottom-icons {
+        grid-area: d;
+    }
+}
+@media (max-width: 821px) {
+    section.brain-boost {
+        gap: 28px;
+    }
+    section.brain-boost .right {
+        margin-top: 66px;
+        order: 4;
+    }
+    section.brain-boost .right .box-container {
+        position: relative;
+    }
 }
 
 /* templates section */
@@ -586,7 +785,6 @@ section.templates .container{
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
-    max-height: 550px;
 }
 section.templates .container .left{
     width: 50%;
@@ -658,6 +856,20 @@ section.templates .container .right{
     gap: 28px;
 }
 
+@media (max-width: 940px) {
+    section.templates .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    section.templates .container .left,section.templates .container .right{
+        width: 100%;
+    }
+    section.templates .container .right{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* everything section */
 section.everything{
     padding-top: 150px;
@@ -683,17 +895,17 @@ section.everything .container{
     row-gap: 48px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     section.everything .container {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
+} */
+/* 
 @media (max-width: 768px) {
     section.everything .container {
         grid-template-columns: 1fr;
     }
-}
+} */
 section.everything .box{
     max-width: 283px;
     cursor: pointer;
@@ -714,6 +926,7 @@ section.everything .box h3{
 section.get-started{
     min-height: max-content;
     padding-bottom: 3rem;
+    margin-top: 150px;
 }
 section.get-started h1{
     font-size: 60px;
@@ -730,17 +943,23 @@ section.get-started .container h3{
     font-family: 'NotionInter-SemiBold';
 }
 section.get-started .box{
+    position: relative;
     background-color: #F6F5F4;
     border-radius: 12px;
     overflow: hidden;
-
     padding: 24px 32px 0 32px;
-
     height: 536px;
+    width: 50%;
+    border: 1px solid #F6F5F4;
 }
 section.get-started .box img{
-    width: 566px;
-    height: 344px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+
+    bottom: 0;
 }
 section.get-started .box .btn-container{
     display: flex;
@@ -770,9 +989,38 @@ section.get-started .box .btn-container a:nth-child(2){
 section.get-started .box .btn-container a:nth-child(2):hover{
     background-color: #eaeaea;
 }
+@media (max-width:1245px){
+    section.get-started .box{
+        height: 500px;
+    }
+}
+@media (max-width:1050px){
+    section.get-started .box{
+        height: 450px;
+    }
+}
+@media (max-width:960px){
+    section.get-started .box h3{
+        white-space: nowrap;
+    }
+}
+@media (max-width:940px){
+    section.get-started .container{
+        flex-direction: column;
+    }
+    section.get-started .box{
+        width: 100%;
+        height: max-content;
+        padding-right: 0;
+    }
+    section.get-started .box img{
+        position: relative;
+    }
+}
 /* Footer Section */
 footer{
     display: flex;
+    justify-content: center;
     gap: 24px;
     padding: 80px 125px;
     width: 100%;
@@ -856,6 +1104,7 @@ footer .gray{
 
 footer .link{
     display: flex;
+    justify-content: center;
     gap: 24px;
     height: max-content;
 }
@@ -874,6 +1123,7 @@ footer .link div a{
     color: #31302e;
     font-size: 15px;
     cursor: pointer;
+    width: max-content;
 }
 footer .link div a:hover{
     text-decoration: underline;
@@ -887,4 +1137,21 @@ footer .link div .explore{
 }
 footer .link div .explore:hover{
     color: #0083fa;
+}
+
+@media (max-width: 1150px) {
+    footer .link div {
+        width: 150px;
+    }
+}
+@media (max-width: 1079px) {
+    footer{
+        flex-direction: column;
+    }
+    footer .link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        justify-content: center;
+    }
 }
