@@ -136,6 +136,9 @@ nav .logo{
     margin-right: 30px;
     cursor: pointer;
 }
+nav .left .menu-group{
+    display: flex;
+}
 nav p{
     display: flex;
     align-items: center;
@@ -191,8 +194,20 @@ nav .right button{
 
     transition: .15s ease;
 }
+nav .right button.hamburger-menu{
+    display: none;
+}
 nav .right button:hover{
     background-color: #31302e;
+}
+
+@media (max-width: 1274px) {
+    nav .left .menu-group{
+        display: none;
+    }
+    nav .right button.hamburger-menu{
+        display: unset;
+    }
 }
 
 /* home section */
@@ -760,6 +775,7 @@ footer{
     display: flex;
     gap: 24px;
     padding: 80px 125px;
+    width: 100%;
 }
 footer .notion{
     display: flex;
