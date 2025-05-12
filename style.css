@@ -41,7 +41,8 @@
     box-sizing: border-box;
     font-family: 'NotionInter-Regular','Inter', sans-serif;
     scroll-behavior: smooth;
-    cursor: default;
+
+    user-select: none;
 }
 html,body{
     width: 100%;
@@ -815,6 +816,7 @@ footer .notion .bottom button{
     border-radius: 5px;
     padding: 8px;
     width: max-content;
+    cursor: pointer;
 }
 footer .notion .bottom button:hover{
     background-color: #eaeaea;
@@ -855,6 +857,7 @@ footer .link div p{
 footer .link div a{
     color: #31302e;
     font-size: 15px;
+    cursor: pointer;
 }
 footer .link div a:hover{
     text-decoration: underline;
@@ -865,4 +868,7 @@ footer .link div .explore{
     bottom: 0;
     color: #000;
     font-weight: 600;
+}
+footer .link div .explore:hover{
+    color: #0083fa;
 }
