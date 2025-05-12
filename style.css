@@ -327,6 +327,29 @@ section.home .bottom-btn button:nth-child(1){
         justify-content: center;
     }
 }
+@media (max-width:702px){
+    section.home .container .left{
+        text-align: left;
+    }
+    section.home .container h1{
+        font-size: 53px;
+        letter-spacing: -.04em;
+        line-height: 95%;
+    }
+    section.home .btn-container a{
+        width: 100%;
+        text-align: center;
+    }
+    section.home .logo-container .logos{
+        justify-content: space-between;
+    }
+    section.home .container .right{
+        width: 100%;
+    }
+    section.home .img-box img{
+        margin: 0;
+    }
+}
 /* note section */
 section.note{
     margin-top: 150px;
@@ -679,6 +702,26 @@ section.ai-promote .container blockquote::after{
 section.ai-promote .container .forbes{
     width: 65px;
     height: 17px;
+}
+@media (max-width: 702px) {
+    section.ai-promote{
+        margin: 150px 137px 200px 137px;
+        padding: 20px;
+        min-height: unset;
+    }
+    section.ai-promote .container{
+        padding: 20px;
+    }
+    section.ai-promote .container blockquote{
+        margin: 0 24px;
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    section.ai-promote .container .pin{
+        top: -30px;
+        width: 35.5px;
+        height: 51px;
+    }
 }
 
 /* brain-boost section */
