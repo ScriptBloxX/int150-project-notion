@@ -84,7 +84,8 @@ hr{
     font-family: 'NotionInter-Bold';
 }
 .t-s{
-    color: #f6f5f4;
+    color: #E5E5E5;
+    padding: 0;
 }
 .b-s{
     background-color: #f6f5f4;
@@ -172,7 +173,7 @@ nav .left{
 nav .right{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 12px;
 
 }
 nav .right p:nth-child(1){
