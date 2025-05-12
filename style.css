@@ -306,6 +306,17 @@ section.home .bottom-btn button:nth-child(1){
     background-color: #e5e5e5;
     border: none;
 }
+@media (max-width:1079px){
+    section.home .bottom-btn{
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 4px;
+    }
+    section.home .bottom-btn button{
+        border: none;
+        font-size: 14px;
+    }
+}
 @media (max-width:960px){
     section.home .container{
         flex-direction: column;
@@ -406,6 +417,11 @@ section.note .bottom-icons{
     gap: 1rem;
     margin-top: 1rem;
     align-items: center;
+}
+section.note .bottom-icons .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 section.note .bottom-icons .box{
     display: flex;
@@ -508,6 +524,11 @@ section.workflow .bottom-icons .box {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+section.workflow .bottom-icons .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 @media (min-width: 822px) {
     section.workflow {
@@ -617,6 +638,11 @@ section.management .bottom-icons .box {
     align-items: center;
     gap: .5rem;
 }
+section.management .bottom-icons .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 section.management .bottom-icons .box img{
     height: 25px;
     width: 25px;
@@ -692,6 +718,8 @@ section.ai-promote .container .pin{
 section.ai-promote .container blockquote{
     font-size: 42px;
     font-family: 'LyonTextRegular';
+    color: #191918;
+    white-space: nowrap;
 }
 section.ai-promote .container blockquote::before{
     content: open-quote;
@@ -721,6 +749,14 @@ section.ai-promote .container .forbes{
         top: -30px;
         width: 35.5px;
         height: 51px;
+    }
+}
+@media (max-width: 381px) {
+    section.ai-promote .container blockquote{
+        white-space: wrap;
+    }
+    section.ai-promote{
+        margin: 150px 0;
     }
 }
 
@@ -784,6 +820,11 @@ section.brain-boost .bottom-icons .box {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+section.brain-boost .bottom-icons .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 @media (min-width: 822px) {
     section.brain-boost {
@@ -949,11 +990,11 @@ section.everything .container{
     row-gap: 48px;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 702px) {
     section.everything .container {
         grid-template-columns: repeat(2, 1fr);
     }
-} */
+}
 /* 
 @media (max-width: 768px) {
     section.everything .container {
@@ -1212,5 +1253,59 @@ footer .link div .explore:hover{
 @media (max-width: 839px) {
     footer{
         padding: 80px 66px;
+    }
+}
+
+/* other responsive */
+@media (max-width:589px) {
+    section.note .right,section.workflow .right,section.management .right,section.brain-boost .right{
+        order: 3;
+    }
+    section.note .bottom-icons,section.workflow .bottom-icons,section.management .bottom-icons,section.brain-boost .bottom-icons{
+        order: 4;
+        padding-top: 34px;
+        border-top: 1px solid #0000001a;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section .right div.box-container{
+        flex-direction: column;
+    }
+    section .right div.box-container .box{
+        flex-direction: row;
+        max-width: unset;
+    }
+    section .right div.box-container .box video{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width:599px) {
+    section.note h1,section.workflow h1,section.management h1,section.brain-boost h1,section.templates .header h1,section.everything h1,section.get-started h1{
+        font-size: 42px;
+    }
+    section.get-started .box h3{
+        font-size: 32px;
+    }
+    footer{
+        padding: 40px 32px;
+    }
+}
+@media (max-width:523px) {
+    section.home .logo-container .logos {
+        width: max-content;
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        grid-template-rows: auto;
+
+        row-gap: 8px;
+        column-gap: 24px;
+        padding-bottom: 1rem;
+    }
+}
+@media (max-width:399px) {
+    footer{
+        padding: 40px 16px;
     }
 }
