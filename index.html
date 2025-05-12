@@ -78,7 +78,11 @@
                 </div>
             </div>
             <div class="img-box">
-                <img src="/assets/img/page/Onboarding.avif">
+                <picture>
+                    <source srcset="/assets/img/page/Onboarding-mobile.avif" media="(max-width: 740px)">
+                    <source srcset="/assets/img/page/Onboarding.avif" media="(min-width: 741px)">
+                    <img src="/assets/img/page/Onboarding.avif" alt="Responsive image">
+                </picture>
             </div>
             <div class="bottom-btn">
                 <button>
@@ -191,7 +195,8 @@
             </div>
             <div class="video-box">
                 <video autoplay muted>
-                    <source src="assets/video/write-screen-desktop.mp4" type="video/mp4">
+                    <source src="assets/video/write-screen-desktop.mp4" type="video/mp4" media="(min-width: 741px)">
+                    <source src="assets/video/write-screen-mobile.mp4" type="video/mp4" media="(max-width: 740px)">
                 </video>
             </div>
             <div class="bottom-icons">
@@ -244,7 +249,8 @@
             </div>
             <div class="video-box">
                 <video autoplay muted>
-                    <source src="assets/video/plan-screen-desktop.mp4" type="video/mp4">
+                    <source src="assets/video/plan-screen-desktop.mp4" type="video/mp4" media="(min-width: 741px)">
+                    <source src="assets/video/plan-screen-mobile.mp4" type="video/mp4" media="(max-width: 740px)">
                 </video>
             </div>
             <div class="bottom-icons">
@@ -297,8 +303,11 @@
             </div>
             <div class="video-box">
                 <video autoplay muted>
-                    <source src="assets/video/organize-screen-desktop.mp4" type="video/mp4">
+                    <source src="assets/video/organize-screen-desktop.mp4" type="video/mp4" media="(min-width: 741px)">
                 </video>
+                <picture>
+                    <img src="/assets/img/page/organize-screen-mobile.avif" alt="Responsive image">
+                </picture>
             </div>
             <div class="bottom-icons">
                 <h4>Replaces</h4>
@@ -357,7 +366,8 @@
             </div>
             <div class="video-box">
                 <video autoplay muted>
-                    <source src="assets/video/ai-screen-desktop.mp4" type="video/mp4">
+                    <source src="assets/video/ai-screen-desktop.mp4" type="video/mp4" media="(min-width: 741px)">
+                    <source src="assets/video/ai-screen-mobile.mp4" type="video/mp4" media="(max-width: 740px)">
                 </video>
             </div>
         </section>

@@ -568,9 +568,20 @@ section.management .right .box video {
     width: 80px;
     height: 80px;
 }
-section.management .video-box video {
+section.management .video-box video,section.management .video-box img {
     width: 100%;
     border-radius: 1rem;
+}
+section.management .video-box picture{
+    display: none;
+}
+@media (max-width:740px) {
+    section.management .video-box video{
+        display: none;
+    }
+    section.management .video-box picture{
+        display: unset;
+    }
 }
 section.management .bottom-icons {
     display: flex;
@@ -1153,5 +1164,10 @@ footer .link div .explore:hover{
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
         justify-content: center;
+    }
+}
+@media (max-width: 839px) {
+    footer{
+        padding: 80px 66px;
     }
 }
