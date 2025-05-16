@@ -2,35 +2,35 @@
 
 @font-face {
     font-family: 'LyonTextRegular';
-    src: url('/assets/fonts/LyonText-Regular-Web.woff2') format('woff2');
+    src: url('./assets/fonts/LyonText-Regular-Web.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'NotionInter-Bold';
-    src: url('/assets/fonts/NotionInter-Bold.woff2') format('woff2');
+    src: url('./assets/fonts/NotionInter-Bold.woff2') format('woff2');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'NotionInter-Medium';
-    src: url('/assets/fonts/NotionInter-Medium.woff2') format('woff2');
+    src: url('./assets/fonts/NotionInter-Medium.woff2') format('woff2');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'NotionInter-Regular';
-    src: url('/assets/fonts/NotionInter-Regular.woff2') format('woff2');
+    src: url('./assets/fonts/NotionInter-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'NotionInter-SemiBold';
-    src: url('/assets/fonts/NotionInter-SemiBold.woff2') format('woff2');
+    src: url('./assets/fonts/NotionInter-SemiBold.woff2') format('woff2');
     font-style: normal;
     font-weight: 600;
 }
