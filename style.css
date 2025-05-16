@@ -141,7 +141,7 @@ nav .logo{
 nav .left .menu-group{
     display: flex;
 }
-nav p{
+nav a{
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -152,14 +152,14 @@ nav p{
     padding: 5px 10px;
     transition: .15s ease;
 }
-nav p:hover{
+nav a:hover{
     background-color: #f4f4f4;
 }
-nav p span.dropdown-icon svg{
+nav a span.dropdown-icon svg{
     width: 10px;
     height: 10px;
 }
-nav p span.new{
+nav a span.new{
     color: #2383e2;
     background-color: #f0f6fd;
     font-size: 12px;
@@ -176,16 +176,19 @@ nav .left{
     align-items: center;
     gap: 4px;
 }
+nav a{
+    color: #000;
+}
 nav .right{
     display: flex;
     align-items: center;
     gap: 12px;
 
 }
-nav .right p:nth-child(1){
+nav .right a:nth-child(1){
     font-family: 'NotionInter-SemiBold';
 }
-nav .right p{
+nav .right a{
     font-family: 'NotionInter-Medium';
     font-size: 15px;
 }
@@ -212,7 +215,7 @@ nav .right button:hover{
     }
 }
 @media (max-width: 839px) {
-    nav .right p{
+    nav .right a,nav .right span{
         display: none;
     }
 }
@@ -995,15 +998,10 @@ section.everything .container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-/* 
-@media (max-width: 768px) {
-    section.everything .container {
-        grid-template-columns: 1fr;
-    }
-} */
 section.everything .box{
     max-width: 283px;
     cursor: pointer;
+    color: #000;
 }
 section.everything .box:hover{
     color: #78736f;
