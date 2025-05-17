@@ -1060,6 +1060,7 @@ section.get-started .box .btn-container{
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 section.get-started .box .btn-container a{
     font-family: 'NotionInter-SemiBold';
