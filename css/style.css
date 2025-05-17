@@ -1,40 +1,46 @@
+/* ============================================
+   FONTS
+   ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @font-face {
     font-family: 'LyonTextRegular';
-    src: url('./assets/fonts/LyonText-Regular-Web.woff2') format('woff2');
+    src: url('../assets/fonts/LyonText-Regular-Web.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'NotionInter-Bold';
-    src: url('./assets/fonts/NotionInter-Bold.woff2') format('woff2');
+    src: url('../assets/fonts/NotionInter-Bold.woff2') format('woff2');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'NotionInter-Medium';
-    src: url('./assets/fonts/NotionInter-Medium.woff2') format('woff2');
+    src: url('../assets/fonts/NotionInter-Medium.woff2') format('woff2');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'NotionInter-Regular';
-    src: url('./assets/fonts/NotionInter-Regular.woff2') format('woff2');
+    src: url('../assets/fonts/NotionInter-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'NotionInter-SemiBold';
-    src: url('./assets/fonts/NotionInter-SemiBold.woff2') format('woff2');
+    src: url('../assets/fonts/NotionInter-SemiBold.woff2') format('woff2');
     font-style: normal;
     font-weight: 600;
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
 * {
     padding: 0;
     margin: 0;
@@ -79,7 +85,9 @@ hr{
     border: none;
 }
 
-/* helper class */
+/* ============================================
+   HELPER CLASSES
+   ============================================ */
 .semi-bold {
     font-family: 'NotionInter-SemiBold';
 }
@@ -117,7 +125,9 @@ hr{
     font-size: 1rem;
 }
 
-/* nav */
+/* ============================================
+   NAVIGATION
+   ============================================ */
 nav{
     display: flex;
     align-items: center;
@@ -206,6 +216,9 @@ nav .right button:hover{
     background-color: #31302e;
 }
 
+/* ============================================
+   RESPONSIVE NAVIGATION
+   ============================================ */
 @media (max-width: 1274px) {
     nav .left .menu-group{
         display: none;
@@ -220,7 +233,9 @@ nav .right button:hover{
     }
 }
 
-/* home section */
+/* ============================================
+   HOME SECTION
+   ============================================ */
 section.home{
     margin-top: 25px;
 }
@@ -248,6 +263,8 @@ section.home .container .right video{
     width: 100%;
     height: 100%;
 }
+
+/* Button styles for home section */
 section.home .container .sign-up{
     color: #f6f5f4;
     background-color: #0083fa;
@@ -268,6 +285,8 @@ section.home .container .req-demo{
 section.home .container .req-demo:hover{
     background-color: #d6e1f5;
 }
+
+/* Logo container in home section */
 section.home .logo-container .logos{
     display: flex;
     gap: 2rem;
@@ -290,6 +309,8 @@ section.home .img-box img{
     border-radius: 1rem;
     margin-top: 2.5rem;
 }
+
+/* Bottom navigation buttons */
 section.home .bottom-btn{
     display: flex;
     justify-content: center;
@@ -309,6 +330,10 @@ section.home .bottom-btn button:nth-child(1){
     background-color: #e5e5e5;
     border: none;
 }
+
+/* ============================================
+   HOME SECTION RESPONSIVE
+   ============================================ */
 @media (max-width:1079px){
     section.home .bottom-btn{
         flex-wrap: wrap;
@@ -364,7 +389,10 @@ section.home .bottom-btn button:nth-child(1){
         margin: 0;
     }
 }
-/* note section */
+
+/* ============================================
+   NOTE SECTION (DOCS & NOTES)
+   ============================================ */
 section.note{
     margin-top: 150px;
     display: flex;
@@ -391,6 +419,8 @@ section.note .left{
 section.note .right{
     position: relative;
 }
+
+/* Box container for feature highlights */
 section.note .right .box-container{
     position: absolute;
     bottom: 0;
@@ -415,6 +445,8 @@ section.note .video-box video{
     width: 100%;
     border-radius: 1rem;
 }
+
+/* Bottom section with "Replaces" items */
 section.note .bottom-icons{
     display: flex;
     gap: 1rem;
@@ -431,6 +463,10 @@ section.note .bottom-icons .box{
     align-items: center;
     gap: .5rem;
 }
+
+/* ============================================
+   NOTE SECTION RESPONSIVE
+   ============================================ */
 @media (min-width: 822px) {
     section.note {
         display: grid;
@@ -466,7 +502,9 @@ section.note .bottom-icons .box{
     }
 }
 
-/* workflow section */
+/* ============================================
+   WORKFLOW SECTION
+   ============================================ */
 section.workflow {
     margin-top: 150px;
     display: flex;
@@ -493,6 +531,8 @@ section.workflow .left {
 section.workflow .right {
     position: relative;
 }
+
+/* Box container for feature highlights */
 section.workflow .right .box-container {
     position: absolute;
     bottom: 0;
@@ -517,6 +557,8 @@ section.workflow .video-box video {
     width: 100%;
     border-radius: 1rem;
 }
+
+/* Bottom section with "Replaces" items */
 section.workflow .bottom-icons {
     display: flex;
     gap: 1rem;
@@ -533,6 +575,10 @@ section.workflow .bottom-icons .box-container{
     flex-wrap: wrap;
     gap: 12px;
 }
+
+/* ============================================
+   WORKFLOW SECTION RESPONSIVE
+   ============================================ */
 @media (min-width: 822px) {
     section.workflow {
         display: grid;
@@ -568,7 +614,9 @@ section.workflow .bottom-icons .box-container{
     }
 }
 
-/* management section */
+/* ============================================
+   MANAGEMENT SECTION
+   ============================================ */
 section.management {
     margin-top: 150px;
     display: flex;
@@ -595,6 +643,8 @@ section.management .left {
 section.management .right {
     position: relative;
 }
+
+/* Box container for feature highlights */
 section.management .right .box-container {
     position: absolute;
     bottom: 0;
@@ -615,6 +665,8 @@ section.management .right .box video {
     width: 80px;
     height: 80px;
 }
+
+/* Video and responsive image handling */
 section.management .video-box video,section.management .video-box img {
     width: 100%;
     border-radius: 1rem;
@@ -630,6 +682,8 @@ section.management .video-box picture{
         display: unset;
     }
 }
+
+/* Bottom section with "Replaces" items */
 section.management .bottom-icons {
     display: flex;
     gap: 1rem;
@@ -650,6 +704,10 @@ section.management .bottom-icons .box img{
     height: 25px;
     width: 25px;
 }
+
+/* ============================================
+   MANAGEMENT SECTION RESPONSIVE
+   ============================================ */
 @media (min-width: 822px) {
     section.management {
         display: grid;
@@ -685,7 +743,9 @@ section.management .bottom-icons .box img{
     }
 }
 
-/* ai-promote section */
+/* ============================================
+   AI PROMOTE SECTION
+   ============================================ */
 section.ai-promote{
     min-height: 70vh;
 
@@ -734,6 +794,10 @@ section.ai-promote .container .forbes{
     width: 65px;
     height: 17px;
 }
+
+/* ============================================
+   AI PROMOTE SECTION RESPONSIVE
+   ============================================ */
 @media (max-width: 702px) {
     section.ai-promote{
         margin: 150px 137px 200px 137px;
@@ -763,7 +827,9 @@ section.ai-promote .container .forbes{
     }
 }
 
-/* brain-boost section */
+/* ============================================
+   BRAIN BOOST SECTION (AI FEATURES)
+   ============================================ */
 section.brain-boost {
     display: flex;
     flex-direction: column;
@@ -789,6 +855,8 @@ section.brain-boost .left {
 section.brain-boost .right {
     position: relative;
 }
+
+/* Box container for feature highlights */
 section.brain-boost .right .box-container {
     position: absolute;
     bottom: 0;
@@ -813,6 +881,8 @@ section.brain-boost .video-box video {
     width: 100%;
     border-radius: 1rem;
 }
+
+/* Bottom icons section */
 section.brain-boost .bottom-icons {
     display: flex;
     gap: 1rem;
@@ -829,6 +899,10 @@ section.brain-boost .bottom-icons .box-container{
     flex-wrap: wrap;
     gap: 12px;
 }
+
+/* ============================================
+   BRAIN BOOST SECTION RESPONSIVE
+   ============================================ */
 @media (min-width: 822px) {
     section.brain-boost {
         display: grid;
@@ -864,7 +938,9 @@ section.brain-boost .bottom-icons .box-container{
     }
 }
 
-/* templates section */
+/* ============================================
+   TEMPLATES SECTION
+   ============================================ */
 section.templates{
     margin-top: 150px;
 }
@@ -884,12 +960,12 @@ section.templates .container{
     display: flex;
     gap: 2rem;
 }
-section.templates .container .left{
-    width: 50%;
-}
+section.templates .container .left,
 section.templates .container .right{
     width: 50%;
 }
+
+/* Card styles */
 section.templates .container .card{
     background-color: #F6F5F4;
     padding: 24px 32px;
@@ -908,6 +984,8 @@ section.templates .container .card svg{
     width: 54px;
     height: 54px;
 }
+
+/* Left card with featured template */
 section.templates .container .left .card{
     padding: 24px 0 0 32px;
     display: flex;
@@ -918,6 +996,8 @@ section.templates .container .left .card .img-box{
     position: relative;
     width: 100%;
 }
+
+/* Creating the stacked cards effect */
 section.templates .container .left .card .img-box .topcard:nth-child(1){
     position: absolute;
     top: -8px;
@@ -948,12 +1028,17 @@ section.templates .container .left .card .img-box img{
     width: 100%;
     z-index: 3;
 }
+
+/* Right side grid of template cards */
 section.templates .container .right{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
 }
 
+/* ============================================
+   TEMPLATES SECTION RESPONSIVE
+   ============================================ */
 @media (max-width: 940px) {
     section.templates .container {
         flex-direction: column;
@@ -968,7 +1053,9 @@ section.templates .container .right{
     }
 }
 
-/* everything section */
+/* ============================================
+   EVERYTHING SECTION (FEATURE GRID)
+   ============================================ */
 section.everything{
     padding-top: 150px;
 
@@ -986,18 +1073,16 @@ section.everything p.gray{
     font-family: 'NotionInter-Medium';
     font-size: 18px;
 }
-section.everything .container{
+
+/* Grid layout for feature boxes */
+section.everything .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 28px;
     row-gap: 48px;
 }
 
-@media (max-width: 702px) {
-    section.everything .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/* Feature box styles */
 section.everything .box{
     max-width: 283px;
     cursor: pointer;
@@ -1015,7 +1100,18 @@ section.everything .box h3{
     font-family: 'NotionInter-SemiBold';
 }
 
-/* get-started section */
+/* ============================================
+   EVERYTHING SECTION RESPONSIVE
+   ============================================ */
+@media (max-width: 702px) {
+    section.everything .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   GET STARTED SECTION
+   ============================================ */
 section.get-started{
     min-height: max-content;
     padding-bottom: 3rem;
@@ -1035,6 +1131,8 @@ section.get-started .container h3{
     font-size: 42px;
     font-family: 'NotionInter-SemiBold';
 }
+
+/* App download boxes */
 section.get-started .box{
     position: relative;
     background-color: #F6F5F4;
@@ -1054,6 +1152,8 @@ section.get-started .box img{
 
     bottom: 0;
 }
+
+/* Action buttons */
 section.get-started .box .btn-container{
     display: flex;
     gap: 1rem;
@@ -1083,6 +1183,10 @@ section.get-started .box .btn-container a:nth-child(2){
 section.get-started .box .btn-container a:nth-child(2):hover{
     background-color: #eaeaea;
 }
+
+/* ============================================
+   GET STARTED SECTION RESPONSIVE
+   ============================================ */
 @media (max-width:1245px){
     section.get-started .box{
         height: 500px;
@@ -1111,7 +1215,10 @@ section.get-started .box .btn-container a:nth-child(2):hover{
         position: relative;
     }
 }
-/* Footer Section */
+
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
 footer{
     display: flex;
     justify-content: center;
@@ -1119,6 +1226,8 @@ footer{
     padding: 80px 125px;
     width: 100%;
 }
+
+/* Left side with logo and info */
 footer .notion{
     display: flex;
     flex-direction: column;
@@ -1129,6 +1238,8 @@ footer .notion .notion-logo{
     width: 136px;
     height: 29px;
 }
+
+/* Social media icons */
 footer .notion .social-container{
     display: flex;
     gap: 4px;
@@ -1158,6 +1269,8 @@ footer .notion a{
     text-decoration: none;
     color: #78736f;
 }
+
+/* Bottom area of left side */
 footer .notion .bottom{
     display: flex;
     flex-direction: column;
@@ -1196,6 +1309,7 @@ footer .gray{
     font-size: 14px;
 }
 
+/* Right side with link columns */
 footer .link{
     display: flex;
     justify-content: center;
@@ -1233,6 +1347,9 @@ footer .link div .explore:hover{
     color: #0083fa;
 }
 
+/* ============================================
+   FOOTER RESPONSIVE
+   ============================================ */
 @media (max-width: 1150px) {
     footer .link div {
         width: 150px;
@@ -1255,8 +1372,11 @@ footer .link div .explore:hover{
     }
 }
 
-/* other responsive */
+/* ============================================
+   ADDITIONAL RESPONSIVE ADJUSTMENTS
+   ============================================ */
 @media (max-width:589px) {
+    /* Reordering elements in feature sections on small screens */
     section.note .right,section.workflow .right,section.management .right,section.brain-boost .right{
         order: 3;
     }
@@ -1268,6 +1388,7 @@ footer .link div .explore:hover{
         flex-direction: column;
         align-items: flex-start;
     }
+    /* Feature boxes alignment for small screens */
     section .right div.box-container{
         flex-direction: column;
     }
@@ -1281,6 +1402,7 @@ footer .link div .explore:hover{
     }
 }
 @media (max-width:599px) {
+    /* Smaller heading sizes for mobile */
     section.note h1,section.workflow h1,section.management h1,section.brain-boost h1,section.templates .header h1,section.everything h1,section.get-started h1{
         font-size: 42px;
     }
@@ -1292,6 +1414,7 @@ footer .link div .explore:hover{
     }
 }
 @media (max-width:523px) {
+    /* Reorganize logos in home section for very small screens */
     section.home .logo-container .logos {
         width: max-content;
         display: grid;
