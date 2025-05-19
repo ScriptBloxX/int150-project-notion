@@ -492,7 +492,6 @@ section.note .bottom-icons .box{
         gap: 28px;
     }
     section.note .right{
-        margin-top: 66px;
         order: 4;
     }
     section.note .right .box-container{
@@ -602,7 +601,6 @@ section.workflow .bottom-icons .box-container{
         gap: 28px;
     }
     section.workflow .right {
-        margin-top: 66px;
         order: 4;
     }
     section.workflow .right .box-container {
@@ -729,7 +727,6 @@ section.management .bottom-icons .box img{
         gap: 28px;
     }
     section.management .right {
-        margin-top: 66px;
         order: 4;
     }
     section.management .right .box-container {
@@ -922,7 +919,6 @@ section.brain-boost .bottom-icons .box-container{
         gap: 28px;
     }
     section.brain-boost .right {
-        margin-top: 66px;
         order: 4;
     }
     section.brain-boost .right .box-container {
