@@ -460,7 +460,6 @@ section.note .bottom-icons .box-container{
 section.note .bottom-icons .box{
     display: flex;
     align-items: center;
-    gap: .5rem;
 }
 
 /* ============================================
@@ -566,7 +565,6 @@ section.workflow .bottom-icons {
 section.workflow .bottom-icons .box {
     display: flex;
     align-items: center;
-    gap: .5rem;
 }
 section.workflow .bottom-icons .box-container{
     display: flex;
@@ -690,7 +688,6 @@ section.management .bottom-icons {
 section.management .bottom-icons .box {
     display: flex;
     align-items: center;
-    gap: .5rem;
 }
 section.management .bottom-icons .box-container{
     display: flex;
@@ -888,7 +885,6 @@ section.brain-boost .bottom-icons {
 section.brain-boost .bottom-icons .box {
     display: flex;
     align-items: center;
-    gap: .5rem;
 }
 section.brain-boost .bottom-icons .box-container{
     display: flex;
