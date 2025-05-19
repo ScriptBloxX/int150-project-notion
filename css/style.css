@@ -450,7 +450,6 @@ section.note .video-box video{
 section.note .bottom-icons{
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     align-items: center;
 }
 section.note .bottom-icons .box-container{
@@ -562,7 +561,6 @@ section.workflow .video-box video {
 section.workflow .bottom-icons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     align-items: center;
 }
 section.workflow .bottom-icons .box {
@@ -687,7 +685,6 @@ section.management .video-box picture{
 section.management .bottom-icons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     align-items: center;
 }
 section.management .bottom-icons .box {
@@ -886,7 +883,6 @@ section.brain-boost .video-box video {
 section.brain-boost .bottom-icons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     align-items: center;
 }
 section.brain-boost .bottom-icons .box {
